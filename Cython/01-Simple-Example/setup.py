@@ -2,7 +2,7 @@ from distutils.core import setup
 from Cython.Build import cythonize
 from pathlib import Path
 
-filename_cython_module = "cython_code.pyx"
+filename_cython_module = "code_cy.pyx"
 file_address = Path(Path.cwd(), filename_cython_module)
 
 if __name__ == "__main__":

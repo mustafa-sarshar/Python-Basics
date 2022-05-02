@@ -13,4 +13,3 @@ if __name__ == "__main__":
         print(f"Python/Cython is {(py/cy):.2f}")
     else:
         print("No arguments are given. Please give the number and times the function should be executed.")
-

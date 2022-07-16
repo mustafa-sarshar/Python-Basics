@@ -41,11 +41,13 @@ if __name__ == "__main__":
     
     while n_clicked < n_clicks:
         continue
+    print(f"{n_clicked} mouse positions were captured!")
+    
     repeat = "y"
     while repeat == "y":
+        _ = input("Press a key to start ...")
         for i in range(n_clicks):
-            automatic_clicking(mouse_positions[i], delay=clicking_delay)
-        
+            automatic_clicking(mouse_positions[i], delay=clicking_delay)        
         repeat = input("Do you want to repeat? (y/n): ").lower().strip()        
     
     # remove the listeners when you want

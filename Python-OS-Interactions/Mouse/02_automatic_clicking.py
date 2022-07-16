@@ -41,9 +41,12 @@ if __name__ == "__main__":
     
     while n_clicked < n_clicks:
         continue
-    
-    for i in range(n_clicks):
-        automatic_clicking(mouse_positions[i], delay=clicking_delay)
+    repeat = "y"
+    while repeat == "y":
+        for i in range(n_clicks):
+            automatic_clicking(mouse_positions[i], delay=clicking_delay)
+        
+        repeat = input("Do you want to repeat? (y/n): ").lower().strip()        
     
     # remove the listeners when you want
     mouse.unhook_all()
